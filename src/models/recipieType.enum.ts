@@ -1,0 +1,15 @@
+export enum RecipieType {
+  BREAKFAST = 'frokost',
+  LUNCH = 'lunsj',
+  DINNER = 'middag',
+  DESSERT = 'dessert',
+  APPETIZER = 'forrett',
+  SIDEDISH = 'siderett',
+  SOUP = 'suppe',
+  SALAD = 'salat',
+  DRESSING = 'dressing',
+  CAKE = 'kake',
+  BREAD = 'brød',
+  DRINK = 'drikke',
+  SNACK = 'snacks',
+}

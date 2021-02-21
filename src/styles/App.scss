@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.App {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 300px;
+  text-align: center;
+  background-color: $white;
+}
+
+.App-logo {
+  padding: 5vh 0;
+  img.app-logo-img {
+    width: 100px;
+  }
+  p.app-logo-name {
+    color: $mainBlue;
+    font-family: 'Yellowtail';
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  font-size: 0.75em;
+  color: $white;
+  background-color: $mainBlue;
+  padding: 2vh 0;
+  margin-top: 2vh;
+  a {
+    color: $white;
+  }
+}

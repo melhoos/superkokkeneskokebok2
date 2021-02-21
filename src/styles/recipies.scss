@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+div.recipies {
+  margin: 0 5vw;
+}
+
+div.recipie-block {
+  @include box;
+  background-color: $white;
+  color: $mainBlue;
+  margin: 10px 0;
+
+  .recipie-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+      .recipie-name {
+        opacity: 0.5;
+      }
+    }
+    .recipie-types {
+      opacity: 0.5;
+    }
+  }
+
+  .recipie-content {
+    text-align: left;
+    display: flex;
+    visibility: visible;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: solid 1px $mainBlue;
+
+    &.close {
+      display: none;
+      visibility: hidden;
+    }
+    span {
+      font-weight: 500;
+    }
+
+    .recipie-ingredients,
+    .recipie-procedure {
+      ol {
+        margin: 5px 0;
+      }
+    }
+
+    .recipie-ingredients {
+      min-width: fit-content;
+      padding-right: 10px;
+      ol {
+        list-style: none;
+        padding: 0;
+        li {
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .recipie-procedure {
+      ol {
+        padding-left: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+form {
+  margin: 0 5vw 4vh;
+}
+
+span.filter-btn {
+  @include box;
+  background-color: $white;
+  color: $mainBlue;
+  display: inline-block;
+  cursor: pointer;
+  label {
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  input {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+span.filter-btn:not(.is-checked) label:hover {
+  opacity: 0.5;
+}
+
+span.filter-btn.is-checked {
+  background-color: $mainBlue;
+  color: $white;
+}

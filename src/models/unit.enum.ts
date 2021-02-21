@@ -1,0 +1,15 @@
+export enum Unit {
+  L = 'l',
+  DL = 'dl',
+  ML = 'ml',
+  SS = 'ss',
+  TS = 'ts',
+  KG = 'kg',
+  G = 'g',
+  STK = 'stk',
+  PAKKE = 'pk',
+  POSE = 'pose',
+  NEVE = 'neve',
+  FEDD = 'fedd',
+  SMAK = 'smak til med',
+}
