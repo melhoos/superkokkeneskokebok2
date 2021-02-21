@@ -27,7 +27,6 @@ const ingredientsList = (ingredients: Ingredient[]): JSX.Element => {
 };
 
 const procedureList = (procedure: string[]): JSX.Element => {
-  console.log('procedure: ', procedure);
   return (
     <div className="recipie-procedure">
       <span>{`Fremgangsmåte`}</span>
