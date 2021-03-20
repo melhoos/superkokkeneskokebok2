@@ -15,6 +15,13 @@ div.recipie-block {
     justify-content: space-between;
     font-weight: 500;
 
+    .recipie-name {
+      text-align: left;
+    }
+    .recipie-types {
+      text-align: right;
+    }
+
     &:hover {
       cursor: pointer;
       .recipie-name {
@@ -50,11 +57,12 @@ div.recipie-block {
     }
 
     .recipie-ingredients {
-      min-width: fit-content;
+      max-width: 50%;
       padding-right: 10px;
       ol {
         list-style: none;
         padding: 0;
+        overflow: auto;
         li {
           white-space: nowrap;
         }

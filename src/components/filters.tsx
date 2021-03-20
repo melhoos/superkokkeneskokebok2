@@ -7,8 +7,8 @@ const Filters = (): JSX.Element => {
   const recipieTypes: string[] = Object.values(RecipieType);
   return (
     <form>
-      {recipieTypes.map((recipieType: string) => (
-        <FilterBtn title={recipieType} />
+      {recipieTypes.map((recipieType: string, i: number) => (
+        <FilterBtn key={i} title={recipieType} />
       ))}
     </form>
   );

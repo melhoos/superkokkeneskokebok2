@@ -18,8 +18,8 @@ const ingredientsList = (ingredients: Ingredient[]): JSX.Element => {
     <div className="recipie-ingredients">
       <span>{`Ingredienser`}</span>
       <ol>
-        {ingredients.map((ingredient: Ingredient) => (
-          <li>{formattedIngredient(ingredient)}</li>
+        {ingredients.map((ingredient: Ingredient, i: number) => (
+          <li key={i}>{formattedIngredient(ingredient)}</li>
         ))}
       </ol>
     </div>
@@ -31,8 +31,8 @@ const procedureList = (procedure: string[]): JSX.Element => {
     <div className="recipie-procedure">
       <span>{`Fremgangsmåte`}</span>
       <ol>
-        {procedure.map((step: string) => (
-          <li>{step}</li>
+        {procedure.map((step: string, i: number) => (
+          <li key={i}>{step}</li>
         ))}
       </ol>
     </div>

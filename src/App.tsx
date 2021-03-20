@@ -4,6 +4,7 @@ import Logo from './components/logo';
 import Footer from './components/footer';
 import Filters from './components/filters';
 import Recipies from './components/recipies';
+import RecipieTypesProvider from './providers/recipieFilterProvider';
 
 function App(): JSX.Element {
   return (
@@ -12,8 +13,10 @@ function App(): JSX.Element {
         <Logo />
       </header>
       <main>
-        <Filters />
-        <Recipies />
+        <RecipieTypesProvider>
+          <Filters />
+          <Recipies />
+        </RecipieTypesProvider>
       </main>
       <Footer />
     </div>
